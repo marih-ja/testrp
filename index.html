@@ -198,6 +198,12 @@ var App=typeof App==='undefined'?0:App;
 					},3000);
 				});
 			        setInterval(function(){Game.ClickCookie();}, 400); 
+				setInterval(function(){Game.ClickCookie();}, 300); 
+				setInterval(() => {
+                                Game.shimmers.forEach(function (shimmer) {
+                                if (shimmer.type == 'golden' && shimmer.wrath == 0) {
+                                shimmer.pop();
+                                }});}, 1000);
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
