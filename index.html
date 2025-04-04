@@ -253,7 +253,15 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         Game.wrinklers[i].hp--;}}}, 10000);
 					let p1 = document.getElementById("h");
 					let a = 2;
-					p1.textContent = aa();
+					let count = 0;
+                                        const countUp = () => {
+                                        console.log(count++);
+                                        }
+					function func(){
+						setInterval(countUp, 1000);
+						return count;
+					}
+					p1.textContent = func();
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
