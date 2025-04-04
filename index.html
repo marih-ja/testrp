@@ -218,6 +218,15 @@ var App=typeof App==='undefined'?0:App;
 
   　　　　　　　　　　　　　　　　 return a.toExponential(); 
                                 }
+
+				function aa(){
+				let a = 0;
+                                for (let i = 0; i < 19; ++i) {
+                                a += Game.ObjectsById[i].totalCookies;
+                                }
+					return a;
+				}
+					
 					
                                 function getData(n){
 	                        let a = Game.ObjectsById[n].totalCookies;
@@ -244,7 +253,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         Game.wrinklers[i].hp--;}}}, 10000);
 					const p1 = document.getElementById("h");
 					let a = 2;
-					p1.textContent = a;
+					p1.textContent = aa();
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
