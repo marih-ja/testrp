@@ -235,6 +235,15 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 		"\nトータル" + total());}
 					let button2 = document.getElementById('btn1');
 					button2.addEventListener('click', showdata);
+
+
+					setInterval(() => {
+                                        for (var i = 0; i < 10; i++) {
+                                        if (Game.wrinklers[i].close === 1) {
+                                        Game.wrinklers[i].hp--;
+                                        }
+                                        }
+                                        }, 10000);
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
