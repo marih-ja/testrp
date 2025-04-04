@@ -1,4 +1,4 @@
-﻿/*
+/*
 All this code is copyright Orteil, 2013-2023.
 	-with some help, advice and fixes by Nicholas Laux, Debugbro, Opti, the folks at Playsaurus, and lots of people on reddit, Discord, and the DashNet forums
 	-also includes a bunch of snippets found on stackoverflow.com and others
@@ -6860,7 +6860,7 @@ Game.Launch=function()
 				'</div>'+
 				'<div id="statsGeneral">'+
 					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
-					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">' + sh(0) + '</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
@@ -16910,3 +16910,25 @@ window.onload=function()
 		else loadLangAndLaunch(lang);
 	}
 };
+function total() {
+  let a = 0;
+  for (let i = 0; i < 19; ++i) {
+    a += Game.ObjectsById[i].totalCookies;
+  }
+
+  return a.toExponential(); 
+}
+
+function getData(n) {
+  let a = Game.ObjectsById[n].totalCookies;
+  return a.toExponential();
+}
+
+Game.ObjectsById[n].baseCps();
+
+function sh(n) {
+  setInterval(() => {
+    let a = getData(n);
+  }, 1000);
+  return a;
+}
