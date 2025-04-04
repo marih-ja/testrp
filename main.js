@@ -16909,6 +16909,7 @@ window.onload=function()
 		else loadLangAndLaunch(lang);
 	}
 };
+/*
 function total() {
   let a = 0;
   for (let i = 0; i < 19; ++i) {
@@ -16942,4 +16943,4 @@ function fn(){
 setInterval(() => {
   for(let i = 0;i < 20;++i){
   arr[i] = getData(i);}
-}, 1000);
+}, 1000);*/
