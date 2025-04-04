@@ -252,7 +252,6 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         if (Game.wrinklers[i].close === 1) {
                                         Game.wrinklers[i].hp--;}}}, 10000);
 					let p1 = document.getElementById("h");
-					let a = 2;
 					let count = 0;
                                         const countUp = () => {
                                         console.log(count++);
@@ -261,7 +260,13 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 						setInterval(countUp, 1000);
 						return count;
 					}
-					p1.textContent = func();
+					let count = 0;
+                                        setInterval(() => {
+                                        count++;
+                                        count.toExponential();
+                                        p1.textContent = count.toExponential();;
+                                         }, 1000);
+					
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
