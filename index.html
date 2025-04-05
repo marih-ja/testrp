@@ -256,8 +256,8 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 
 					function sortByKeyDesc(array, key) {
                                         return array.sort((a, b) => {
-                                        if (a[key].toExponential() > b[key].toExponential()) return -1;
-                                        if (a[key].toExponential() < b[key].toExponential()) return 1;
+                                        if (a[key] > b[key]) return -1;
+                                        if (a[key] < b[key]) return 1;
                                         return 0;
                                         });
                                         }
@@ -270,7 +270,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 	   {name: "fractal", score: 0},{name: "console", score: 0}, {name: "universe", score:  0}, 
 	   {name: "AI", score: 0},{name: "you", score: 0}];
 						for(let i = 0;i < 20;++i){
-                                                objc[i].score = Game.ObjectsById[i].totalCookies.toExponential();
+                                                objc[i].score = Game.ObjectsById[i].totalCookies;
                                                 }	
 						const sorted = sortByKeyDesc(objc, "score");
 						alert(sorted[0].score + "\n" + sorted[1].score + "\n" + sorted[2].score + "\n" + sorted[3].score + "\n" + sorted[4].score);
