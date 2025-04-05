@@ -239,7 +239,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 	 "フラクタルエンジン", "コンソール", "多次元宇宙", "コーテックス・ベイカー", "あなた",];
 
 	 function showdata(){
-		alert("カーソル:" + getData(0) + "\nグランマ" + getData(1) + "\n農場" + getData(2) + "\n鉱山" + getData(3) + + "\n工場" + getData(4) + "\n銀行" + getData(5) +
+		alert("カーソル:" + getData(0) + "\nグランマ" + getData(1) + "\n農場" + getData(2) + "\n鉱山" + getData(3) + "\n工場" + getData(4) + "\n銀行" + getData(5) +
 	        "\n神殿" + getData(6)+ "\n魔法の党" + getData(7)+ "\n貨物船" + getData(8)+ "\n錬金術ラボ" + getData(9)+ "\nポータル" + getData(10)+ "\nタイムマシン" + getData(11)+ "\n反物質凝縮器" + getData(12)+ "\nプリズム" + getData(13)+
 		"\nチャンスメーカー" + getData(14)+ "\nフラクタルエンジン" + getData(15)+ "\nコンソール" + getData(16)+ "\n多次元宇宙" + getData(17)+ "\n惑星知能" + getData(18)+ "\nあなた" + getData(19)+ 
 		"\nトータル" + total());}
@@ -251,11 +251,15 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         arr[i] = getData(i);
                                         }
                                         }
-
-
+					function sortArrayAscending(arr) {
+                                        return arr.sort((a, b) => a - b);
+                                        }
                                         setInterval(() => {
                                         for(let i = 0;i < 20;++i){
                                         arr[i] = getData(i);}
+                                        }, 1000);
+					setInterval(() => {
+                                        let ar = sortArrayAscending(arr);
                                         }, 1000);
 				</script>
 				
