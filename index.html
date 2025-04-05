@@ -251,18 +251,21 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         function fn(){                             
                                         for(let i = 0;i < 20;++i){
                                         arr[i] = getData(i);
+                                        }	
                                         }
-                                        }
-					setInterval(() => {
-                                        for(let i = 0;i < 20;++i){
-                                        arr[i] = getData(i);}
-                                        }, 1000);
 
 					let objc = [{name: "cursor", score: arr[0]}, {name: "granma", score: arr[1]}, {name: "farms", score: arr[2]}, {name: "mine", score: arr[3]},{name: "factory", score: arr[4]},{name: "bank", score: arr[5]},
            {name: "temple", score: arr[6]},{name: "magic", score: arr[7]}, {name: "ship", score: arr[8]},{name: "lab", score: arr[9]}, 
 	   {score: "portal", score: arr[10]}, {name: "timemachine", score: arr[11]}, {score: "Antimatter Condenser", score: arr[12]},{name: "prizm", score: arr[13]},{name:"chancemaker", score: arr[14]},
 	   {name: "fractal", score: arr[15]},{name: "console", score: arr[16]}, {name: "universe", score:  arr[17]}, 
 	   {name: "AI", score: arr[18]},{name: "you", score: arr[19]}];
+					
+					setInterval(() => {
+                                        for(let i = 0;i < 20;++i){
+                                        arr[i] = getData(i);}
+                                        }, 1000);
+
+					
 					
 					/*
 					function sortArrayAscending(arr) {
