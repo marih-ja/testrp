@@ -245,7 +245,18 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 		"\nトータル" + total());}
 					let button2 = document.getElementById('btn1');
 					button2.addEventListener('click', showdata);
-					
+					var arr = Array(20);
+                                        function fn(){                             
+                                        for(let i = 0;i < 20;++i){
+                                        arr[i] = getData(i);
+                                        }
+                                        }
+
+
+                                        setInterval(() => {
+                                        for(let i = 0;i < 20;++i){
+                                        arr[i] = getData(i);}
+                                        }, 1000);
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
