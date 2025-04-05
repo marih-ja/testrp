@@ -266,14 +266,14 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 					function showd(){
 						let objc = [{name: "cursor", score: 0}, {name: "granma", score: 0}, {name: "farms", score: 0}, {name: "mine", score: 0},{name: "factory", score: 0},{name: "bank", score: 0},
            {name: "temple", score: 0},{name: "magic", score: 0}, {name: "ship", score: 0},{name: "lab", score: 0}, 
-	   {score: "portal", score: 0}, {name: "timemachine", score: 0}, {score: "Antimatter Condenser", score: 0},{name: "prizm", score: 0},{name:"chancemaker", score: 0},
+	   {score: "portal", score: 0}, {name: "timemachine", score: 0}, {name: "Antimatter Condenser", score: 0},{name: "prizm", score: 0},{name:"chancemaker", score: 0},
 	   {name: "fractal", score: 0},{name: "console", score: 0}, {name: "universe", score:  0}, 
 	   {name: "AI", score: 0},{name: "you", score: 0}];
 						for(let i = 0;i < 20;++i){
                                                 objc[i].score = Game.ObjectsById[i].totalCookies;
                                                 }	
 						const sorted = sortByKeyDesc(objc, "score");
-						alert("\nトータル" + total() + "\n" + sorted[0].name +": " + sorted[0].score.toExponential() + "\n" + sorted[1].name +": " + sorted[1].score.toExponential() + "\n" + sorted[2].name +": " + sorted[2].score + "\n" + sorted[3].name +": " + sorted[3].score + "\n" + sorted[4].name +": " + sorted[4].score + 
+						alert("\nトータル" + total() + "\n" + sorted[0].name +": " + sorted[0].score.toExponential() + "\n" + sorted[1].name +": " + sorted[1].score.toExponential() + "\n" + sorted[2].name +": " + sorted[2].score.toExponential() + "\n" + sorted[3].name +": " + sorted[3].score.toExponential() + "\n" + sorted[4].name +": " + sorted[4].score + 
 						"\n" + sorted[5].name +": " + sorted[5].score.toExponential() + "\n" + sorted[6].name +": " + sorted[6].score.toExponential() + "\n" + sorted[7].name +": " + sorted[7].score.toExponential() + "\n" + sorted[0].name +": " + sorted[8].score.toExponential()
 						 + "\n" + sorted[9].name +": " + sorted[9].score.toExponential() + "\n" +sorted[10].name +": " +  sorted[10].score.toExponential() + "\n" + sorted[11].name +": " + sorted[11].score.toExponential() + "\n" + sorted[12].name +": " + sorted[12].score.toExponential()
 						 + "\n" +sorted[13].name +": " +  sorted[13].score.toExponential() + "\n" + sorted[14].name +": " + sorted[14].score.toExponential() + "\n" + sorted[15].name +": " + sorted[15].score.toExponential() + "\n" + sorted[16].name +": " + sorted[16].score.toExponential()
