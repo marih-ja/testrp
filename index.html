@@ -264,16 +264,15 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         for(let i = 0;i < 20;++i){
                                         arr[i] = getData(i);}
                                         }, 1000);
-					var arr1 = Array(20);
-					let obdc = [{name: "cursor", score: arr1[0]}, {name: "granma", score: arr1[1]}, {name: "farms", score: arr1[2]}, {name: "mine", score: arr1[3]},{name: "factory", score: arr1[4]},{name: "bank", score: arr1[5]},
-           {name: "temple", score: arr1[6]},{name: "magic", score: arr1[7]}, {name: "ship", score: arr1[8]},{name: "lab", score: arr1[9]}, 
-	   {score: "portal", score: arr1[10]}, {name: "timemachine", score: arr1[11]}, {score: "Antimatter Condenser", score: arr1[12]},{name: "prizm", score: arr1[13]},{name:"chancemaker", score: arr1[14]},
-	   {name: "fractal", score: arr1[15]},{name: "console", score: arr1[16]}, {name: "universe", score:  arr1[17]}, 
-	   {name: "AI", score: arr1[18]},{name: "you", score: arr1[19]}];
+					let objc1 = [{name: "cursor", score: 0}, {name: "granma", score: 0}, {name: "farms", score: 0}, {name: "mine", score: 0},{name: "factory", score: 0},{name: "bank", score: 0},
+           {name: "temple", score: 0},{name: "magic", score: 0}, {name: "ship", score: 0},{name: "lab", score: 0}, 
+	   {score: "portal", score: 0}, {name: "timemachine", score: 0}, {score: "Antimatter Condenser", score: 0},{name: "prizm", score: 0},{name:"chancemaker", score: 0},
+	   {name: "fractal", score: 0},{name: "console", score: 0}, {name: "universe", score:  0}, 
+	   {name: "AI", score: 0},{name: "you", score: 0}];
 					
 					setInterval(() => {
                                         for(let i = 0;i < 20;++i){
-                                        arr1[i] = getData(i);}
+                                        objc1[i].score = getDara(i);
                                         }, 1000);
 					
 					/*
