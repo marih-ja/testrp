@@ -253,6 +253,10 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         arr[i] = getData(i);
                                         }
                                         }
+					setInterval(() => {
+                                        for(let i = 0;i < 20;++i){
+                                        arr[i] = getData(i);}
+                                        }, 1000);
 
 					let objc = [{name: "cursor", score: arr[0]}, {name: "granma", score: arr[1]}, {name: "farms", score: arr[2]}, {name: "mine", score: arr[3]},{name: "factory", score: arr[4]},{name: "bank", score: arr[5]},
            {name: "temple", score: arr[6]},{name: "magic", score: arr[7]}, {name: "ship", score: arr[8]},{name: "lab", score: arr[9]}, 
@@ -264,10 +268,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 					function sortArrayAscending(arr) {
                                         return arr.sort((a, b) => b - a);
                                         }
-                                        setInterval(() => {
-                                        for(let i = 0;i < 20;++i){
-                                        arr[i] = getData(i);}
-                                        }, 1000);
+                                        
 					let ar = [];
 					setInterval(() => {
                                         ar = sortArrayAscending(arr);
