@@ -238,6 +238,8 @@ var App=typeof App==='undefined'?0:App;
 let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行", "神殿", "魔法の党", "貨物船", "錬金術ラボ", "ポータル", "タイムマシン", "反物質凝縮器", "プリズム", "チャンスメーカー",
 	 "フラクタルエンジン", "コンソール", "多次元宇宙", "コーテックス・ベイカー", "あなた",];
 
+
+
 	 function showdata(){
 		alert("カーソル:" + getData(0) + "\nグランマ" + getData(1) + "\n農場" + getData(2) + "\n鉱山" + getData(3) + "\n工場" + getData(4) + "\n銀行" + getData(5) +
 	        "\n神殿" + getData(6)+ "\n魔法の党" + getData(7)+ "\n貨物船" + getData(8)+ "\n錬金術ラボ" + getData(9)+ "\nポータル" + getData(10)+ "\nタイムマシン" + getData(11)+ "\n反物質凝縮器" + getData(12)+ "\nプリズム" + getData(13)+
@@ -251,8 +253,16 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         arr[i] = getData(i);
                                         }
                                         }
+
+					let objc = [{name: "cursor", score: arr[0]}, {name: "granma", score: arr[1]}, {name: "farms", score: arr[2]}, {name: "mine", score: arr[3]},{name: "factory", score: arr[4]},{name: "bank", score: arr[5]},
+           {name: "temple", score: arr[6]},{name: "magic", score: arr[7]}, {name: "ship", score: arr[8]},{name: "lab", score: arr[9]}, 
+	   {score: "portal", score: arr[10]}, {name: "timemachine", score: arr[11]}, {score: "Antimatter Condenser", score: arr[12]},{name: "prizm", score: arr[13]},{name:"chancemaker", score: arr[14]},
+	   {name: "fractal", score: arr[15]},{name: "console", score: arr[16]}, {name: "universe", score:  arr[17]}, 
+	   {name: "AI", score: arr[18]},{name: "you", score: arr[19]}];
+					
+					/*
 					function sortArrayAscending(arr) {
-                                        return arr.sort((a, b) => a - b);
+                                        return arr.sort((a, b) => b - a);
                                         }
                                         setInterval(() => {
                                         for(let i = 0;i < 20;++i){
@@ -261,7 +271,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 					let ar = [];
 					setInterval(() => {
                                         ar = sortArrayAscending(arr);
-                                        }, 1000);
+                                        }, 1000);*/
 				</script>
 				
 				<div class="supportComment">^ Sponsored link ^</div>
