@@ -256,8 +256,8 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
 
 					function sortByKeyDesc(array, key) {
                                         return array.sort((a, b) => {
-                                        if (a[key].toExponential > b[key].toExponential) return -1;
-                                        if (a[key].toExponential < b[key].toExponential) return 1;
+                                        if (a[key].toExponential() > b[key].toExponential()) return -1;
+                                        if (a[key].toExponential() < b[key].toExponential()) return 1;
                                         return 0;
                                         });
                                         }
