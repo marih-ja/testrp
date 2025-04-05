@@ -254,17 +254,32 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                         }	
                                         }
 
-					let objc = [{name: "cursor", score: arr[0]}, {name: "granma", score: arr[1]}, {name: "farms", score: arr[2]}, {name: "mine", score: arr[3]},{name: "factory", score: arr[4]},{name: "bank", score: arr[5]},
-           {name: "temple", score: arr[6]},{name: "magic", score: arr[7]}, {name: "ship", score: arr[8]},{name: "lab", score: arr[9]}, 
-	   {score: "portal", score: arr[10]}, {name: "timemachine", score: arr[11]}, {score: "Antimatter Condenser", score: arr[12]},{name: "prizm", score: arr[13]},{name:"chancemaker", score: arr[14]},
-	   {name: "fractal", score: arr[15]},{name: "console", score: arr[16]}, {name: "universe", score:  arr[17]}, 
-	   {name: "AI", score: arr[18]},{name: "you", score: arr[19]}];
-					
+					function sortByKeyDesc(array, key) {
+                                        return array.sort((a, b) => {
+                                        if (a[key] > b[key]) return -1;
+                                        if (a[key] < b[key]) return 1;
+                                        return 0;
+                                        });
+                                        }
+
+					let button3 = document.getElementById('btn2');
+					function showd(){
+						let objc = [{name: "cursor", score: 0}, {name: "granma", score: 0}, {name: "farms", score: 0}, {name: "mine", score: 0},{name: "factory", score: 0},{name: "bank", score: 0},
+           {name: "temple", score: 0},{name: "magic", score: 0}, {name: "ship", score: 0},{name: "lab", score: 0}, 
+	   {score: "portal", score: 0}, {name: "timemachine", score: 0}, {score: "Antimatter Condenser", score: 0},{name: "prizm", score: 0},{name:"chancemaker", score: 0},
+	   {name: "fractal", score: 0},{name: "console", score: 0}, {name: "universe", score:  0}, 
+	   {name: "AI", score: 0},{name: "you", score: 0}];
+						for(let i = 0;i < 20;++i){
+                                                objc[i].score = Game.ObjectsById[i].totalCookies.toExponential();
+                                                }	
+						const sorted = sortByKeyDesc(objc, "score");
+						alert(objc[1].score + objc[2].score);
+					}
 					setInterval(() => {
                                         for(let i = 0;i < 20;++i){
                                         arr[i] = getData(i);}
                                         }, 1000);
-					
+					button3.addEventListener('click', showd);
 					
 					/*
 					function sortArrayAscending(arr) {
