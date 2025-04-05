@@ -273,7 +273,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                                 objc[i].score = Game.ObjectsById[i].totalCookies.toExponential();
                                                 }	
 						const sorted = sortByKeyDesc(objc, "score");
-						alert(objc[0].score + "\n" + objc[1].score + "\n" + objc[2].score + "\n" + objc[3].score + "\n" + objc[4].score);
+						alert(sorted[0].score + "\n" + sorted[1].score + "\n" + sorted[2].score + "\n" + sorted[3].score + "\n" + sorted[4].score);
 					}
 					setInterval(() => {
                                         for(let i = 0;i < 20;++i){
