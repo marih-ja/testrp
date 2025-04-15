@@ -279,7 +279,7 @@ let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行"
                                                 objc[i].score = Game.ObjectsById[i].totalCookies;
                                                 }	
 						const sorted = sortByKeyDesc(objc, "score");
-						let a0 = Math.round((sorted[].score.toExponential() / total()) * 100) / 100;
+						let a0 = Math.round((sorted[0].score.toExponential() / total()) * 100) / 100;
 						let a1 = Math.round((sorted[1].score.toExponential() / total()) * 100) / 100;
 						let a2 = Math.round((sorted[2].score.toExponential() / total()) * 100) / 100;
 						let a3 = Math.round((sorted[3].score.toExponential() / total()) * 100) / 100;
