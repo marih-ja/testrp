@@ -6857,10 +6857,30 @@ Game.Launch=function()
 				str+='<div class="section">'+(EN?"Statistics":loc("Stats"))+'</div>'+
 				'<div class="subsection">'+
 				'<div class="title" style="position:relative;">'+loc("General")+
-				'</div>'+
+				'</div>'+let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行", "神殿", "魔法の党", "貨物船", "錬金術ラボ", "ポータル", "タイムマシン", "反物質凝縮器", "プリズム", "チャンスメーカー",
+	 "フラクタルエンジン", "コンソール", "多次元宇宙", "コーテックス・ベイカー", "あなた",];
 				'<div id="statsGeneral">'+
 					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
-					'<div class="listing"><b>'+loc("Hey")+'</b> <div class="price plain">'+Game.ObjectsById[0].totalCookies+'</div></div>'+
+					'<div class="listing"><b>'+loc("カーソル")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[0].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("グランマ")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[1].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("農場")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[2].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("鉱山")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[3].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("工場")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[4].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("銀行")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[5].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("神殿")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[6].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("magic")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[7].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("貨物船")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[8].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("錬金術ラボ")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[9].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("ポータル")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[10].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("タイムマシン")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[11].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("反物質凝縮器")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[12].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("プリズム")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[13].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("チャンスメーカー")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[14].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("フラクタルエンジン")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[15].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("console.log()")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[16].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("多次元宇宙")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[17].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("コーテックスベイカー")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[18].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("You")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[19].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
