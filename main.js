@@ -6857,9 +6857,10 @@ Game.Launch=function()
 				str+='<div class="section">'+(EN?"Statistics":loc("Stats"))+'</div>'+
 				'<div class="subsection">'+
 				'<div class="title" style="position:relative;">'+loc("General")+
-				'</div>'
+				'</div>'+
 				'<div id="statsGeneral">'+
 					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Hey")+'</b> <div class="price plain">'+Game.ObjectsById[0].totalCookies+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
