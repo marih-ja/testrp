@@ -6861,10 +6861,12 @@ Game.Launch=function()
 				'<div id="statsGeneral">'+
 					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cursor")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[0].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Grandma")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[1].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Farm")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[2].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Mine")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[3].totalCookies)+'</div></div>'+
-					'<div class="listing"><b>'+loc("Grandma")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[1].totalCookies)+'</div></div>'+
-					'<div class="listing"><b>'+loc("Hey")+'</b> <div class="price plain">'+Game.ObjectsById[0].totalCookies+'</div></div>'+
+					'<div class="listing"><b>'+loc("Factory")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[4].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Bank")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[5].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Temple")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[6].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
