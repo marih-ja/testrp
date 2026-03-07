@@ -6876,6 +6876,10 @@ Game.Launch=function()
 					'<div class="listing"><b>'+loc("Prism")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[13].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Chancemaker")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[14].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Fractal engine")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[15].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Javascript console")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[16].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Idleverse")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[17].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("You")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[18].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Idleverse")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[19].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
