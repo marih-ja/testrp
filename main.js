@@ -6867,6 +6867,15 @@ Game.Launch=function()
 					'<div class="listing"><b>'+loc("Factory")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[4].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Bank")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[5].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Temple")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[6].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Wizard tower")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[7].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Shipment")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[8].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Alchemy lab")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[9].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Portal")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[10].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Time machine")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[11].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Antimatter condenser")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[12].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Prism")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[13].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Chancemaker")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[14].totalCookies)+'</div></div>'+
+					'<div class="listing"><b>'+loc("Fractal engine")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[15].totalCookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (this ascension):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned)+'</div></div>'+
 					'<div class="listing"><b>'+loc("Cookies baked (all time):")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesEarned+Game.cookiesReset)+'</div></div>'+
 					(Game.cookiesReset>0?'<div class="listing"><b>'+loc("Cookies forfeited by ascending:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookiesReset)+'</div></div>':'')+
