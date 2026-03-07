@@ -6857,8 +6857,7 @@ Game.Launch=function()
 				str+='<div class="section">'+(EN?"Statistics":loc("Stats"))+'</div>'+
 				'<div class="subsection">'+
 				'<div class="title" style="position:relative;">'+loc("General")+
-				'</div>'+let ob = ["カーソル", "グランマ", "農場", "鉱山", "工場", "銀行", "神殿", "魔法の党", "貨物船", "錬金術ラボ", "ポータル", "タイムマシン", "反物質凝縮器", "プリズム", "チャンスメーカー",
-	 "フラクタルエンジン", "コンソール", "多次元宇宙", "コーテックス・ベイカー", "あなた",];
+				'</div>'
 				'<div id="statsGeneral">'+
 					'<div class="listing"><b>'+loc("Cookies in bank:")+'</b> <div class="price plain">'+Game.tinyCookie()+Beautify(Game.cookies)+'</div></div>'+
 					'<div class="listing"><b>'+loc("カーソル")+'</b> <div class="price plain">'+Beautify(Game.ObjectsById[0].totalCookies)+'</div></div>'+
